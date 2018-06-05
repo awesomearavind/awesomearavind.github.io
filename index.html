@@ -274,7 +274,13 @@
 
 <body onload="initialize()">
     <div id="overlay">
-        <script type="text/javascript" src="load.js"></script>
+        <script>
+        var overlay = document.getElementById("overlay");
+window.addEventListener('load', function() {
+
+    overlay.style.display = "none"
+})
+        </script>
         <ul>
 
             <li></li>
